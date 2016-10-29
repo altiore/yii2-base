@@ -2,9 +2,6 @@
     "name": "altiore/yii2-base",
     "description": "Base Yii2 settings from altiore",
     "type": "yii2-extension",
-    "require": {
-        "yiisoft/yii2": "2.0.4"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -12,5 +9,13 @@
             "email": "razvanlomov@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": "2.0.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "altiore\\base\\": ""
+        }
+    }
 }
