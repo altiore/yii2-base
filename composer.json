@@ -1,0 +1,16 @@
+{
+    "name": "altiore/yii2-base",
+    "description": "Base Yii2 settings from altiore",
+    "type": "yii2-extension",
+    "require": {
+        "yiisoft/yii2": "2.0.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Razzwan",
+            "email": "razvanlomov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
