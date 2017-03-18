@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: r
- * Date: 29.10.16
- * Time: 20:11
- */
 
 namespace altiore\base\console;
 
