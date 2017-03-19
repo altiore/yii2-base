@@ -192,7 +192,7 @@ class Image extends ActiveRecord
 
         try {
             if ($width > $newWidth) {
-                \yii\imagine\Image::text($origin, $newWidth, $newHeight)
+                \yii\imagine\Image::thumbnail($origin, $newWidth, $newHeight)
                     ->save($dest);
             } else {
                 copy($origin, $dest);
