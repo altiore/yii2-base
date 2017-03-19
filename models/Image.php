@@ -85,12 +85,38 @@ class Image extends ActiveRecord
     }
 
     /**
+     * @return array
+     */
+    public function fields()
+    {
+        return [
+            'id',
+            'title',
+            'baseUrl',
+            'url',
+            'ext',
+            'created_at',
+            'created_by',
+            'updated_at',
+            'updated_by',
+        ];
+    }
+
+    /**
      * @param $size string
      * @return string
      */
     public function getAbsoluteUrl($size = '')
     {
         return Yii::getAlias('@uploadPath') . '/' . $this->url . ($size ? $size . '.' : '') . $this->ext;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBaseUrl()
+    {
+        return Yii::getAlias('@uploadPath') . '/';
     }
 
     /**
